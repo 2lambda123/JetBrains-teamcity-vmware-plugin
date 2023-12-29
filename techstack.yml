@@ -1,0 +1,263 @@
+repo_name: 2lambda123/JetBrains-teamcity-vmware-plugin
+report_id: 1e1219b522ac3b4aa49dce51d59e3c8b
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-29T21:26:12+00:00'
+requested_by: andrefmrocha
+provider: github
+branch: master
+detected_tools_count: 15
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: guava
+  description: Google Core Libraries for Java 6+
+  website_url: https://github.com/google/guava
+  version: 13.0.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Java Tools
+  image_url: https://img.stackshare.io/service/2970/wBjKn0ol.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-03-25 12:08:53.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Log4j
+  description: A Java-based logging utility
+  website_url: https://logging.apache.org/log4j/2.x/
+  version: 1.2.17
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Logging Tools
+  image_url: https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-02-04 17:15:52.000000000 Z
+- name: TeamCity
+  description: TeamCity is an ultimate Continuous Integration tool for professionals
+  website_url: http://www.jetbrains.com/teamcity/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/1357/317jQkeS.png
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey.Pak
+  last_updated_on: 2014-05-08 09:12:09.000000000 Z
+- name: com.google.code.gson:gson
+  description: Gson JSON library
+  version: '2.4'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-03-25 12:08:53.000000000 Z
+  vulnerabilities:
+  - name: Deserialization of Untrusted Data in Gson
+    cve_id: CVE-2022-25647
+    cve_url: https://github.com/advisories/GHSA-4jrv-ppp4-jm57
+    detected_date: May 21
+    severity: high
+    first_patched: 2.8.9
+- name: com.google.guava:guava
+  description: Guava is a suite of core and expanded libraries that include utility
+    classes
+  version: 13.0.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-03-25 12:08:53.000000000 Z
+  vulnerabilities:
+  - name: Guava vulnerable to insecure use of temporary directory
+    cve_id: CVE-2023-2976
+    cve_url: https://github.com/advisories/GHSA-7g45-4rm6-3mm3
+    detected_date: Jun 15
+    severity: moderate
+    first_patched: 32.0.0-android
+  - name: Denial of Service in Google Guava
+    cve_id: CVE-2018-10237
+    cve_url: https://github.com/advisories/GHSA-mvr2-9pj6-7w5j
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 24.1.1-android
+  - name: Information Disclosure in Guava
+    cve_id: CVE-2020-8908
+    cve_url: https://github.com/advisories/GHSA-5mg8-w23w-74h3
+    detected_date: Aug 22
+    severity: low
+    first_patched: 32.0.0-android
+- name: commons-codec:commons-codec
+  description: The Apache Commons Codec package contains simple encoder and decoders
+    for various formats such as Base64 and Hexadecimal
+  version: '1.6'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-02-04 17:15:52.000000000 Z
+- name: log4j:log4j
+  description: Apache Log4j 1.2
+  version: 1.2.17
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Sergey Pak
+  last_updated_on: 2017-02-04 17:15:52.000000000 Z
+  vulnerabilities:
+  - name: SQL Injection in Log4j 1.2.x
+    cve_id: CVE-2022-23305
+    cve_url: https://github.com/advisories/GHSA-65fg-84f6-3jq3
+    detected_date: Jan 22
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Apache Log4j
+    cve_id: CVE-2022-23307
+    cve_url: https://github.com/advisories/GHSA-f7vh-qwp3-x37m
+    detected_date: Nov 26
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Log4j
+    cve_id: CVE-2019-17571
+    cve_url: https://github.com/advisories/GHSA-2qrg-x229-3v8q
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 
+  - name: Deserialization of Untrusted Data in Log4j 1.x
+    cve_id: CVE-2022-23302
+    cve_url: https://github.com/advisories/GHSA-w9p3-5cr8-m3jj
+    detected_date: Jan 22
+    severity: high
+    first_patched: 
+  - name: JMSAppender in Log4j 1.2 is vulnerable to deserialization of untrusted data
+    cve_id: CVE-2021-4104
+    cve_url: https://github.com/advisories/GHSA-fp5r-v3w9-4333
+    detected_date: Dec 15
+    severity: high
+    first_patched: 
+- name: org.apache.httpcomponents:httpclient
+  description: Apache HttpComponents Client
+  version: 4.5.14
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Vladimir I
+  last_updated_on: 2023-09-14 09:20:30.000000000 Z
+- name: org.apache.httpcomponents:httpcore
+  description: Apache HttpComponents Core
+  version: 4.4.16
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Vladimir I
+  last_updated_on: 2023-09-14 09:20:30.000000000 Z
+- name: org.dom4j:dom4j
+  description: Flexible XML framework for Java
+  version: 2.1.1
+  license: BSD-1-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Vladimir I
+  last_updated_on: 2023-09-14 09:20:30.000000000 Z
+  vulnerabilities:
+  - name: dom4j allows External Entities by default which might enable XXE attacks
+    cve_id: CVE-2020-10683
+    cve_url: https://github.com/advisories/GHSA-hwj3-m3p6-hj38
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.1.3
+  - name: 'Withdrawn Advisory: dom4j XML Entity Expansion vulnerability'
+    cve_id: CVE-2023-45960
+    cve_url: https://github.com/advisories/GHSA-fgq9-fc3q-vqmw
+    detected_date: Oct 28
+    severity: moderate
+    first_patched: 
+- name: org.projectlombok:lombok
+  description: 'Spice up your java: Automatic Resource Management'
+  version: 1.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
+  detection_source: cloud-vmware-server/pom.xml
+  last_updated_by: Vladimir I
+  last_updated_on: 2023-09-14 09:20:30.000000000 Z
