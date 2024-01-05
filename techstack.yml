@@ -2,7 +2,7 @@ repo_name: 2lambda123/JetBrains-teamcity-vmware-plugin
 report_id: 1e1219b522ac3b4aa49dce51d59e3c8b
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-29T21:26:12+00:00'
+timestamp: '2024-01-05T08:14:26+00:00'
 requested_by: andrefmrocha
 provider: github
 branch: master
@@ -16,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin
   detection_source: Repo Metadata
 - name: Java
   description: A concurrent, class-based, object-oriented, language specifically designed
@@ -26,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -36,6 +38,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin
   detection_source: Repo Metadata
 - name: guava
   description: Google Core Libraries for Java 6+
@@ -59,6 +62,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin
   detection_source: Repo Metadata
 - name: Log4j
   description: A Java-based logging utility
@@ -82,6 +86,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/1357/317jQkeS.png
+  detection_source_url: https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin/blob/master/cloud-vmware-server/pom.xml
   detection_source: cloud-vmware-server/pom.xml
   last_updated_by: Sergey.Pak
   last_updated_on: 2014-05-08 09:12:09.000000000 Z
