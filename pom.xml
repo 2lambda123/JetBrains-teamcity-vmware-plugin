@@ -10,6 +10,7 @@
     <yavijava-version>6.0.05-27</yavijava-version>
     <TeamCityDist></TeamCityDist>
     <local.repo.path>local-repo</local.repo.path>
+    <versions.java-security-toolkit>1.1.2</versions.java-security-toolkit>
   </properties>
     <repositories>
         <repository>
@@ -77,4 +78,13 @@
     <module>cloud-vmware-common</module>
     <module>build</module>
   </modules>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.github.pixee</groupId>
+        <artifactId>java-security-toolkit</artifactId>
+        <version>${versions.java-security-toolkit}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

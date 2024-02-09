@@ -19,6 +19,8 @@ package jetbrains.buildServer.clouds.vmware.web;
 import com.intellij.openapi.diagnostic.Logger;
 import com.vmware.vim25.mo.Folder;
 import com.vmware.vim25.mo.ResourcePool;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.net.URL;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -75,7 +77,7 @@ public class ConfigurationHelperController extends BaseFormXmlController {
       switch (fieldId) {
         case "respool": {
           final VMWareApiConnector myApiConnector = VmwareApiConnectorsPool.getOrCreateConnector(
-            new URL(serverUrl), username, password, null, null, null, myStoreProvider);
+            Urls.create(serverUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS), username, password, null, null, null, myStoreProvider);
           final Element canAddPoolElement = new Element("fieldValid");
           final boolean canAddVM2Pool =
             IOGuard.allowNetworkCall(()->myApiConnector.hasPrivilegeOnResource(fieldValue, ResourcePool.class, RESPOOL_PRIVILEGE));
@@ -90,7 +92,7 @@ public class ConfigurationHelperController extends BaseFormXmlController {
         break;
         case "folder": {
           final VMWareApiConnector myApiConnector = VmwareApiConnectorsPool.getOrCreateConnector(
-            new URL(serverUrl), username, password, null, null, null, myStoreProvider);
+            Urls.create(serverUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS), username, password, null, null, null, myStoreProvider);
           final Element canAddPoolElement = new Element("fieldValid");
           final boolean canAddVM =
             IOGuard.allowNetworkCall(()->myApiConnector.hasPrivilegeOnResource(fieldValue, Folder.class, FOLDER_PRIVILEGE));
