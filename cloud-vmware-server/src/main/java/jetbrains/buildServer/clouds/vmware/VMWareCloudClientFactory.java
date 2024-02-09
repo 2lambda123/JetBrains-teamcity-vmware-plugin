@@ -18,6 +18,8 @@ package jetbrains.buildServer.clouds.vmware;
 
 import com.intellij.openapi.diagnostic.Logger;
 import com.vmware.vim25.ws.XmlGen;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -171,7 +173,7 @@ public class VMWareCloudClientFactory extends AbstractCloudClientFactory<VmwareC
     if (serverUrl != null && username != null) {
       try {
         return VmwareApiConnectorsPool.getOrCreateConnector(
-          new URL(serverUrl), username, password, myServerSettings.getServerUUID(), state.getProfileId(),
+          Urls.create(serverUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS), username, password, myServerSettings.getServerUUID(), state.getProfileId(),
           myInstancesProvider, mySslTrustStoreProvider);
       } catch (MalformedURLException e) {
         LOG.warnAndDebugDetails(e.toString(), e);

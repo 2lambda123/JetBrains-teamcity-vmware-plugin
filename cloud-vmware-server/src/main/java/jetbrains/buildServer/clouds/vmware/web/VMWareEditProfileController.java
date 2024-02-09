@@ -17,6 +17,8 @@
 package jetbrains.buildServer.clouds.vmware.web;
 
 import com.intellij.openapi.diagnostic.Logger;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.net.URL;
 import java.util.*;
 import javax.net.ssl.SSLException;
@@ -123,7 +125,7 @@ public class VMWareEditProfileController extends BaseFormXmlController {
     IOGuard.allowNetworkCall(() -> {
       try {
         final VMWareApiConnector myApiConnector = VmwareApiConnectorsPool.getOrCreateConnector(
-          new URL(serverUrl), username, password, null, null, null, mySslTrustStoreProvider);
+          Urls.create(serverUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS), username, password, null, null, null, mySslTrustStoreProvider);
         myApiConnector.test();
         xmlResponse.addContent(getVirtualMachinesAsElement(myApiConnector.getVirtualMachines(true)));
         xmlResponse.addContent(getFoldersAsElement(myApiConnector.getFolders()));

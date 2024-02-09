@@ -18,6 +18,8 @@ package jetbrains.buildServer.clouds.vmware.web;
 
 import com.intellij.openapi.diagnostic.Logger;
 import com.vmware.vim25.VirtualMachineSnapshotTree;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
@@ -73,7 +75,7 @@ public class GetSnapshotsListController extends BaseFormXmlController {
       return;
     try {
       final VMWareApiConnector myApiConnector = VmwareApiConnectorsPool.getOrCreateConnector(
-        new URL(serverUrl), username, password, null, null, null, myStoreProvider);
+        Urls.create(serverUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS), username, password, null, null, null, myStoreProvider);
       final Map<String, VirtualMachineSnapshotTree> snapshotList = IOGuard.allowNetworkCall(() -> myApiConnector.getSnapshotList(imageName));
       Element snapshots = new Element("Snapshots");
       snapshots.setAttribute("vmName", imageName);
