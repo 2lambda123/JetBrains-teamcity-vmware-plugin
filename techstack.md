@@ -5,9 +5,9 @@
 
 - [Java](https://www.java.com) – Languages
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- [TeamCity](http://www.jetbrains.com/teamcity/) – Continuous Integration
-- [Log4j](https://logging.apache.org/log4j/2.x/) – Logging Tools
 - [guava](https://github.com/google/guava) – Java Tools
+- [Log4j](https://logging.apache.org/log4j/2.x/) – Logging Tools
+- [TeamCity](http://www.jetbrains.com/teamcity/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
 
@@ -19,9 +19,9 @@ Full tech stack [here](/techstack.md)
 
 - <img width='25' height='25' src='https://img.stackshare.io/service/995/K85ZWV2F.png' alt='Java'/> [Java](https://www.java.com) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/1357/317jQkeS.png' alt='TeamCity'/> [TeamCity](http://www.jetbrains.com/teamcity/) – Continuous Integration
-- <img width='25' height='25' src='https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg' alt='Log4j'/> [Log4j](https://logging.apache.org/log4j/2.x/) – Logging Tools
 - <img width='25' height='25' src='https://img.stackshare.io/service/2970/wBjKn0ol.png' alt='guava'/> [guava](https://github.com/google/guava) – Java Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/2804/Coralogix-log4j-integration.jpg' alt='Log4j'/> [Log4j](https://logging.apache.org/log4j/2.x/) – Logging Tools
+- <img width='25' height='25' src='https://img.stackshare.io/service/1357/317jQkeS.png' alt='TeamCity'/> [TeamCity](http://www.jetbrains.com/teamcity/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
 
@@ -32,7 +32,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [2lambda123/JetBrains-teamcity-vmware-plugin](https://github.com/2lambda123/JetBrains-teamcity-vmware-plugin)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|15<br/>Tools used|01/05/24 <br/>Report generated|
+|15<br/>Tools used|02/29/24 <br/>Report generated|
 |------|------|
 </div>
 
